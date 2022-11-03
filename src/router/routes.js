@@ -8,11 +8,11 @@ const routes = [
     ]
   },
   {
-    path: '/todo',
+    path: '/todos',
     component: () => import('pages/TodoApp.vue'),
-    children: [
-      { path: '', component: () => import('pages/IndexPage.vue') }
-    ]
+    // children: [
+    //   { path: '', component: () => import('pages/IndexPage.vue') }
+    // ]
   },
   {
   path: '/tdc',
@@ -21,6 +21,13 @@ const routes = [
       { path: '', component: () => import('pages/IndexPage.vue') }
     ]
   },
+  {
+    path: '/inventory',
+      component: () => import('pages/StoreInventory.vue'),
+      // children: [
+      //   { path: '', component: () => import('pages/IndexPage.vue') }
+      // ]
+    },
   // Always leave this as last one,
   // but you can also remove it
   {
